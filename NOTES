@@ -1,0 +1,60 @@
+body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #223645;
+    z-index: -1;
+}
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #334857;
+    z-index: -1;
+}
+
+
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h4{
+    font-size: 32px;
+    font-weight: 700;}
+
+
+    section id="home1">
+    <div class="image-container">
+        <img src="PICTURE.png" alt="Image Description" class="portfolio-image">
+    </div>
+</section>
+
+.home1 {
+    position:fixed
+
+}
+
+    .image-container {
+        max-width: 60%; /* Set maximum width to prevent image overflow */
+        overflow: hidden; /* Hide any overflowing image parts */
+    }
+    
+    .portfolio-image {
+        width: 50%; /* Make the image occupy the full width of its container */
+        height: auto; /* Maintain aspect ratio while resizing */
+    }
