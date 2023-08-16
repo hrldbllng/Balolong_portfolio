@@ -34,7 +34,7 @@ body::before {
 }
 
 
-
+/*header*/
 .header{
     position: fixed;
     size: 90px;
@@ -271,22 +271,29 @@ transition: .3s;
     margin-bottom: 20px;
 }
 .skills .skills-row{
+    justify-content: space-between; 
     margin-bottom: .2px;
     display: flex;
-    flex-wrap: wrap;
+    
     
 }
+
 
 .skills-box{
     margin-bottom: -100px;
-    margin-left: 260px;
-    display: flex;
+    margin-left: 100px;
     align-items: center;
     justify-content: center;
+    display: flex;
+}
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Gap between progress bars */
 }
 
     
-.skills-box .skills-content{
+/*.skills-box .skills-content{
     position: relative;
     text-align: center;
     position: relative;
@@ -298,24 +305,36 @@ transition: .3s;
     z-index: 1;
     overflow: hidden;
 }
-.skills-box .skills-content::before{
+*/
+.skills-content .progress::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.485);
+    background: #ffffffc1;
     z-index: -1;
     transition: .5s;
 }
-.skills-box .skills-content:hover::before{
+.skills-content .progress:hover::before{
     width: 100%;
 
 }
 
 .skills-content .progress{
-    padding:  5px;
+    position: relative;
+    text-align: center;
+    position: relative;
+    border: .3rem solid lightgray;
+    border-radius: .6rem;
+    width: 440px;
+    height: 95px;
+    padding: 10px 40px;
+    padding-top: -100px;
+    z-index: 1;
+    overflow: hidden;
+
     
 }
 
